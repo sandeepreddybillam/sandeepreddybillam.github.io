@@ -1,0 +1,225 @@
+/* Basic Reset & Body Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif; /* Choose a professional font later */
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+html {
+    scroll-behavior: smooth; /* Smooth scrolling for navigation links */
+}
+
+/* Container for consistent width */
+section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+    color: #0056b3; /* Example color */
+}
+
+h2 {
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #004080; /* Darker blue */
+    color: #fff;
+    padding: 10px 0;
+    position: sticky; /* Makes nav stay at top */
+    top: 0;
+    z-index: 100;
+     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: none;
+    color: #aaccff; /* Lighter blue for hover */
+}
+
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #e9ecef; /* Light grey background */
+    border-radius: 0; /* Full width feel */
+    margin: 0 auto; /* Remove top/bottom margin */
+     box-shadow: none;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Makes it round */
+    margin-bottom: 20px;
+    border: 3px solid #004080;
+    object-fit: cover; /* Prevents image distortion */
+}
+
+#hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #004080;
+}
+
+#hero .tagline {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Skills Section */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+}
+
+.skill-category {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 5px solid #0056b3;
+}
+
+.skill-category h3 {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #004080;
+}
+
+/* Projects Section */
+.project {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+}
+
+.project h3 {
+    margin-bottom: 10px;
+    color: #004080;
+}
+
+.project ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.project li {
+    margin-bottom: 8px;
+}
+
+/* Certifications Section */
+.certification-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+}
+
+.cert-badge {
+    width: 80px; /* Adjust size as needed */
+    height: auto;
+}
+
+/* Contact Section */
+#contact ul {
+    list-style: none;
+}
+
+#contact li {
+    margin-bottom: 10px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #0056b3;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #004080;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Basic Responsiveness */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+     header nav ul li {
+        margin: 5px 0;
+    }
+    .skills-container {
+       grid-template-columns: 1fr; /* Stack skills on smaller screens */
+    }
+}
