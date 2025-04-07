@@ -3,17 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sandeep Reddy Billam - Portfolio</title> </head>
+    <title>Sandeep Reddy Billam - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
-    <h1>Sandeep Reddy Billam</h1>
-    <p>Full Stack Java Developer | AWS Certified | Microservices & Cloud Expert</p>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li> <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
 
-    </body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <img src="img/profile.jpg" alt="Sandeep Reddy Billam" class="profile-photo">
+        <h1>Sandeep Reddy Billam</h1>
+        <p class="tagline">Full Stack Java Developer | Microservices | Cloud Enthusiast</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Full Stack Java Developer with 7+ years of expertise in designing, developing, and deploying enterprise applications across Healthcare, E-commerce, and Retail sectors, with a strong focus on backend development[cite: 1].</p>
+        <p>Extensive backend proficiency in Java, Spring Boot, Spring Cloud, RESTful web services, and Reactive API development using WebFlux[cite: 2]. Hands-on experience with front-end technologies like React.js and Angular where needed[cite: 3].</p>
+        <p>Proven ability to architect and implement scalable microservices architectures, utilizing message brokers such as Kafka, ActiveMQ and RabbitMQ for asynchronous communication and data streaming[cite: 4]. Hands-on experience with cloud platforms including AWS, Azure, and GCP[cite: 5]. Proficient in Infrastructure as Code (IaC) using Terraform[cite: 6].</p>
+         <p>Deep understanding of relational databases (PostgreSQL, MySQL) and NoSQL databases (MongoDB, Cassandra, Couchbase), with expertise in ORM frameworks such as Spring Data JPA and Hibernate[cite: 7]. Experienced in implementing robust security measures using Spring Security with OAuth 2.0 integration[cite: 8].</p>
+         <p>Strong advocate for Test-Driven Development (TDD) with a commitment to achieving high code coverage (80%+)[cite: 9]. Solid understanding of DevOps principles and CI/CD pipelines[cite: 10]. Effective team player in Agile/Scrum environments[cite: 11].</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Languages</h3>
+                <p>Java, JavaScript, Python, PL/SQL</p>
+            </div>
+            <div class="skill-category">
+                <h3>Backend & Frameworks</h3>
+                <p>Spring Boot, Spring Cloud, Spring WebFlux, Spring Data (JPA, MongoDB), Spring Security, Hibernate, Microservices, RESTful APIs, Kafka, RabbitMQ, ActiveMQ</p>
+            </div>
+            <div class="skill-category">
+                <h3>Frontend</h3>
+                <p>React.js, Angular, HTML5, CSS3, JavaScript, Redux, RXJS</p>
+            </div>
+             <div class="skill-category">
+                <h3>Databases</h3>
+                <p>PostgreSQL, MySQL, Oracle DB, MongoDB, Cassandra</p>
+            </div>
+            <div class="skill-category">
+                <h3>Cloud & DevOps</h3>
+                <p>AWS (ECS, EC2, S3, ELB, RDS, Lambda, CloudWatch), Azure DevOps, GCP, Terraform, Docker, Kubernetes, Jenkins, Git, Maven, CI/CD</p>
+            </div>
+            <div class="skill-category">
+                <h3>Testing</h3>
+                <p>JUnit, Mockito, Jest, React Testing Library, TDD</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <article class="project">
+            <h3>Sr. Full Stack Java Developer - Asurion (Feb 2023 – Present) [cite: 15]</h3>
+            <p><strong>Project: Device Diagnostics and Self-Service Portal.</strong> Platform to empower customers to independently troubleshoot and resolve device issues[cite: 16, 17]. Built using a scalable microservices architecture[cite: 18].</p>
+            <p><strong>Key Contributions & Technologies:</strong></p>
+            <ul>
+                <li>Developed backend microservices using Spring Boot 3.1, Spring Cloud, and Java 11/17[cite: 26, 28].</li>
+                <li>Implemented Reactive APIs using Spring WebFlux for high performance[cite: 27].</li>
+                <li>Utilized PostgreSQL (with Spring Data JPA/Hibernate) and MongoDB (with Spring Data MongoDB) for data persistence[cite: 29, 30].</li>
+                <li>Integrated Kafka for asynchronous event-driven communication[cite: 31].</li>
+                <li>Secured APIs using Spring Security and OAuth 2.0[cite: 32].</li>
+                 <li>Developed frontend components with React.js, managed state with Redux, and handled async calls with RXJS[cite: 19, 23, 24].</li>
+                <li>Practiced TDD using JUnit/Mockito and Jest/React Testing Library[cite: 34, 25].</li>
+                <li>Managed CI/CD pipelines with Jenkins, deploying Docker containers to AWS ECS[cite: 36, 37].</li>
+                <li>Utilized AWS services (EC2, S3, ELB, etc.) and Terraform for IaC[cite: 38, 39].</li>
+            </ul>
+        </article>
+
+        <article class="project">
+            <h3>Full Stack Developer - NextGen Healthcare (Mar 2021 – Jan 2023) [cite: 43]</h3>
+            <p><strong>Project: Electronic Health Records (EHR) System Enhancement.</strong> Focused on optimizing backend infrastructure for improved data processing, reliability, and integration[cite: 44, 45].</p>
+             <p><strong>Key Contributions & Technologies:</strong></p>
+            <ul>
+                <li>Developed and deployed Spring Boot microservices on AWS (EC2, RDS, Lambda)[cite: 47, 49].</li>
+                <li>Integrated RabbitMQ using Spring AMQP for scalable asynchronous communication[cite: 50].</li>
+                <li>Migrated SOAP and RESTful APIs from on-premise to AWS[cite: 51].</li>
+                <li>Implemented ORM using Hibernate with PostgreSQL and MySQL[cite: 52, 56].</li>
+                <li>Worked with MongoDB and Elasticsearch for NoSQL data and search[cite: 54, 55].</li>
+                <li>Utilized AWS Lambda and CloudWatch for automation and monitoring[cite: 57].</li>
+                <li>Developed Terraform scripts and Jenkins pipelines for CI/CD and infrastructure automation[cite: 58].</li>
+                <li>Performed unit testing with JUnit and Mockito[cite: 59]. Frontend involved Angular[cite: 155].</li>
+            </ul>
+        </article>
+
+        <article class="project">
+             <h3>Java Developer - Gucci (Jan 2019 – Feb 2021) [cite: 63]</h3>
+             <p><strong>Project: E-commerce Platform Backend Enhancement (Product Catalog Management).</strong> Re-architected and optimized backend systems to handle a large product catalog, ensuring real-time data sync and scalability[cite: 64, 65, 66].</p>
+             <p><strong>Key Contributions & Technologies:</strong></p>
+             <ul>
+                  <li>Developed backend components using Spring MVC, Spring IOC, and Spring Hibernate[cite: 68].</li>
+                  <li>Created RESTful web services using Jersey, Spring, and JAX-RS[cite: 69].</li>
+                  <li>Secured APIs using Spring Security and OAuth2[cite: 70].</li>
+                  <li>Implemented parts of a microservices architecture using Spring Boot[cite: 71].</li>
+                  <li>Integrated Kafka and RabbitMQ for asynchronous processing[cite: 72].</li>
+                  <li>Used Hibernate ORM with MySQL databases; wrote SQL and PL/SQL procedures[cite: 73, 74].</li>
+                  <li>Managed CI/CD pipelines using Azure DevOps[cite: 76].</li>
+                  <li>Deployed and monitored applications on Azure using Azure Monitor[cite: 77].</li>
+                  <li>Contributed to frontend development using React.js[cite: 67].</li>
+             </ul>
+        </article>
+
+        <article class="project">
+             <h3>Software Developer - Atos Syntel (June 2017 – Dec 2018) [cite: 81]</h3>
+             <p><strong>Project: Internal System Monitoring Dashboard.</strong> Developed an application to provide a centralized view of IT infrastructure performance for proactive monitoring[cite: 81, 82, 84].</p>
+             <p><strong>Key Contributions & Technologies:</strong></p>
+             <ul>
+                 <li>Developed frontend components using HTML, CSS, JavaScript, and jQuery[cite: 86, 87].</li>
+                 <li>Implemented AJAX for asynchronous data updates[cite: 88].</li>
+                 <li>Developed backend logic using Java 8 (Streams, Lambda expressions)[cite: 89].</li>
+                 <li>Applied Spring Core and Spring Servlets for server-side components[cite: 90].</li>
+                 <li>Wrote SQL queries for MySQL databases[cite: 91].</li>
+                 <li>Developed and consumed RESTful web services using Spring REST[cite: 92].</li>
+                 <li>Conducted unit testing using JUnit[cite: 93].</li>
+                 <li>Used Git for version control[cite: 94].</li>
+             </ul>
+        </article>
+
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <div class="certification-item">
+             <img src="img/aws-badge.png" alt="AWS Certified Developer Associate Badge" class="cert-badge"> <p>AWS Certified Developer – Associate [cite: 96]</p>
+            </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out!</p>
+        <ul>
+            <li>Email: <a href="mailto:billamsandeepreddy55@gmail.com">billamsandeepreddy55@gmail.com</a></li>
+            <li>LinkedIn: <a href="https://linkedin.com/in/sandeep-reddy-billam-848017166" target="_blank">linkedin.com/in/sandeep-reddy-billam-848017166</a></li>
+             <li><a href="Sandeep_Reddy_Billam_Resume.pdf" target="_blank" class="button">Download Resume</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Sandeep Reddy Billam. All rights reserved.</p>
+    </footer>
+
+</body>
 </html>
